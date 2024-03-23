@@ -1,8 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
-using System.Text;
-using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GoogleSignIn : MonoBehaviour
 {
@@ -29,6 +28,8 @@ public class GoogleSignIn : MonoBehaviour
 
         // Una vez que se obtiene el token de acceso, puedes utilizarlo para hacer solicitudes a la API de Google para obtener información del usuario, etc.
         StartCoroutine(GetUserInfo());
+
+        SceneManager.LoadScene("MainMenu");
     }
 
     private IEnumerator GetUserInfo()
