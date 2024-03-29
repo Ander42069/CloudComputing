@@ -24,6 +24,34 @@
       </div>
     </div>
     <script>
+      function getAuthorizationCodeFromUrl() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var authorizationCode = urlParams.get('code');
+        if (authorizationCode) {
+        console.log('Código de autorización encontrado en la URL: ' + authorizationCode);
+        } else {
+        console.log('No se encontró ningún código de autorización en la URL.');
+        }
+        return authorizationCode;
+      }
+
+      // Función para enviar el código de autorización al servidor Node.js
+      function sendAuthorizationCodeToServer(authorizationCode) {
+        var xhr = new XMLHttpRequest();
+        var url = 'http://localhost:3000/googleUsers/login/callback'; // Cambia la URL por la de tu servidor Node.js
+        xhr.open('POST', url, true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            console.log('Código de autorización enviado al servidor correctamente');
+          } else {
+            console.error('Error al enviar el código de autorización al servidor');
+          }
+        };
+        var data = JSON.stringify({ code: authorizationCode });
+        xhr.send(data);
+      }
+      
       var canvas = document.querySelector("#unity-canvas");
 
       // Shows a temporary message banner/ribbon for a few seconds, or
@@ -112,6 +140,16 @@
             };
 
       document.body.appendChild(script);
+
+      // Código que se ejecuta cuando la página se carga completamente
+      document.addEventListener('DOMContentLoaded', function () {
+        // Obtener el código de autorización de la URL actual
+        var authorizationCode = getAuthorizationCodeFromUrl();
+        if (authorizationCode) {
+          // Enviar el código de autorización al servidor Node.js
+          sendAuthorizationCodeToServer(authorizationCode);
+        }
+      });
 
     </script>
   </body>
