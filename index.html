@@ -25,16 +25,18 @@
     </div>
     <script>
       function getAuthorizationCodeFromUrl() {
-        var urlParams = new URLSearchParams(window.location.search);
-        var authorizationCode = urlParams.get('code');
-        if (authorizationCode) {
-        console.log('Código de autorización encontrado en la URL: ' + authorizationCode);
-        } else {
-        console.log('No se encontró ningún código de autorización en la URL.');
-        }
-        return authorizationCode;
+      var urlParams = new URLSearchParams(window.location.search);
+      var encodedAuthorizationCode = urlParams.get('code');
+      if (encodedAuthorizationCode) {
+          var authorizationCode = decodeURIComponent(encodedAuthorizationCode);
+          console.log('Código de autorización encontrado en la URL: ' + authorizationCode);
+          return authorizationCode;
+      } else {
+          console.log('No se encontró ningún código de autorización en la URL.');
+          return null;
       }
-
+      }
+      
       // Función para enviar el código de autorización al servidor Node.js
       function sendAuthorizationCodeToServer(authorizationCode) {
         var xhr = new XMLHttpRequest();
