@@ -184,11 +184,21 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+<<<<<<< Updated upstream
     "com.unity.nuget.newtonsoft-json": {
       "version": "3.2.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
+=======
+    "com.unity.postprocessing": {
+      "version": "3.4.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.physics": "1.0.0"
+      },
+>>>>>>> Stashed changes
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.core": {
