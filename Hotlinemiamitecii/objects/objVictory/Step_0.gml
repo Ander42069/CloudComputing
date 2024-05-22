@@ -52,11 +52,12 @@ if (keyUp) {
 if (keyEnter) {
     switch (selected) {
         case 1:
-            pause = false; // Continuar
-            if (surface_exists(pauseSurface)) {
-                surface_free(pauseSurface);
+            victory = false; // Continuar
+            if (surface_exists(victorySurface)) {
+                surface_free(victorySurface);
             }
             instance_activate_all();
+            room_restart(); // Reiniciar la sala actual
             break;
         case 2:
             room_goto(Menu); // Volver (cambiar sala a Menu)

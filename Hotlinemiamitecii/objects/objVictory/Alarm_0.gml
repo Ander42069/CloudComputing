@@ -1,5 +1,6 @@
+/// @description Inserte aquí la descripción
+// Puede escribir su código en este editor
 /// @description Insert description here
-
 var reset_Time = animateTime;
 
 if (Increase) {
@@ -16,4 +17,4 @@ if (Increase) {
     }
 }
 
-alarm_set(0, reset_Time);
+alarm[0] = reset_Time; // Ajuste aquí

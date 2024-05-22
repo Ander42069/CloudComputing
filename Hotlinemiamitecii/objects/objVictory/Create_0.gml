@@ -1,6 +1,6 @@
 /// @description Inserte aquí la descripción
-pause = false;
-pauseSurface = noone;
+victory = false;
+victorySurface = noone;
 selected = 1;
 
 draw_set_font(Font_Menue);
