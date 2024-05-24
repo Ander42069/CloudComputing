@@ -42,9 +42,7 @@ var keyUp = keyboard_check_released(vk_up);
 if (keyDown == 1) { draw_Extra = 0;
 switch(selected) {
  case 1: selected = 2; break;
- case 2: selected = 3; break;
- case 3: selected = 4; break;
- case 4: selected = 1; break;
+ case 2: selected = 1; break;
 }}
 
 
@@ -52,8 +50,6 @@ switch(selected) {
 
 if (keyUp == 1) { draw_Extra = 0;
 switch(selected) {
- case 1: selected = 4; break;
+ case 1: selected = 2; break;
  case 2: selected = 1; break;
- case 3: selected = 2; break;
- case 4: selected = 3; break;
 }}
