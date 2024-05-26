@@ -27,6 +27,7 @@
     {"name":"obj_victory_message","order":11,"path":"objects/obj_victory_message/obj_victory_message.yy",},
     {"name":"obj_Wall","order":4,"path":"objects/obj_Wall/obj_Wall.yy",},
     {"name":"obj_Weapon_Throw","order":1,"path":"objects/obj_Weapon_Throw/obj_Weapon_Throw.yy",},
+    {"name":"obj_async_http","order":14,"path":"objects/obj_async_http/obj_async_http.yy",},
     {"name":"objPause","order":7,"path":"objects/objPause/objPause.yy",},
     {"name":"objVictory","order":10,"path":"objects/objVictory/objVictory.yy",},
     {"name":"Room_Gameplay","order":1,"path":"rooms/Room_Gameplay/Room_Gameplay.yy",},
