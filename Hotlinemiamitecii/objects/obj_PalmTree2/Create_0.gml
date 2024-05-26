@@ -1,5 +1,10 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
 
+alarm[0] = 420;
 
-global.points = 0; // Actualiza la puntuación
+scaleUp = 0.02;
+speedUp = 0.02;
+
+image_xscale  = 0.5;
+image_yscale  = 0.5;

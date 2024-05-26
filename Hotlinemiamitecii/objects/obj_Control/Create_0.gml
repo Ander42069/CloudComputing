@@ -20,7 +20,7 @@ ShotSpeed_Aka = 7;
 ShotSpeed_Mg = 7;
 ShotSpeed_Shotgun = 10;
 
-friction_Pistol = 0.04;
+friction_Pistol = 0.04; 
 friction_Smg = 0.04;
 friction_Uzi = 0.04;
 friction_Aka = 0.04;

@@ -1,4 +1,6 @@
 if (victory) { // Cambio aquí: Verificar victoria
+	  // Guardar el puntaje en una variable cuando se alcanza la victoria
+         finalScore = global.points;
     if (!surface_exists(victorySurface)) {
         victorySurface = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
         surface_set_target(victorySurface);
@@ -78,6 +80,7 @@ if (victory) { // Cambio aquí: Verificar victoria
   
 /// @description Inserte aquí la descripción
 victory = instance_number(obj_enemy_White) == 0 && instance_number(obj_enemy_Red) == 0; // Nueva condición
+// Evento Step de objVictory
 
 if (victory) {
     if (!surface_exists(victorySurface)) {
@@ -87,6 +90,9 @@ if (victory) {
         surface_reset_target();
 
         instance_deactivate_all(true);
+
+      
+        
     }
 } else {
     if (surface_exists(victorySurface)) {
