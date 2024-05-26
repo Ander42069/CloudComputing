@@ -76,7 +76,6 @@
     {"id":{"name":"objScoreDisplay","path":"objects/objScoreDisplay/objScoreDisplay.yy",},},
     {"id":{"name":"objVictory","path":"objects/objVictory/objVictory.yy",},},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
-    {"id":{"name":"Room_Gameplay","path":"rooms/Room_Gameplay/Room_Gameplay.yy",},},
     {"id":{"name":"Score","path":"rooms/Score/Score.yy",},},
     {"id":{"name":"ease_in_and_out","path":"scripts/ease_in_and_out/ease_in_and_out.yy",},},
     {"id":{"name":"scr_Input","path":"scripts/scr_Input/scr_Input.yy",},},
@@ -146,7 +145,6 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Score","path":"rooms/Score/Score.yy",},},
-    {"roomId":{"name":"Room_Gameplay","path":"rooms/Room_Gameplay/Room_Gameplay.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
