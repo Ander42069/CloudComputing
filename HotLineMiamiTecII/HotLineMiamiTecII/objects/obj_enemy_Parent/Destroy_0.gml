@@ -39,4 +39,5 @@ switch(weapon) {
 }
 
 
-global.points = global.points +100;
+score += 100;
+global.score = score;  

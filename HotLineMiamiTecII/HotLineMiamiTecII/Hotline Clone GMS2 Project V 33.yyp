@@ -77,6 +77,7 @@
     {"id":{"name":"objPause","path":"objects/objPause/objPause.yy",},},
     {"id":{"name":"objScoreDisplay","path":"objects/objScoreDisplay/objScoreDisplay.yy",},},
     {"id":{"name":"objVictory","path":"objects/objVictory/objVictory.yy",},},
+    {"id":{"name":"textScore","path":"objects/textScore/textScore.yy",},},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"id":{"name":"Room_Gameplay","path":"rooms/Room_Gameplay/Room_Gameplay.yy",},},
     {"id":{"name":"Score","path":"rooms/Score/Score.yy",},},

@@ -2,6 +2,9 @@
 // You can write your code in this editor
 debug = false;
 
+score = load_score();
+
+global.partidas_jugadas = 0;
 
 // values of weapons
 damage_Knife = 1;

@@ -12,8 +12,3 @@ if (file_exists("score.sav")) {
 
 // Prepara el texto a mostrar
 var display_text = "Puntuación obtenida: " + string(points);
-
-// Dibuja el texto en la posición (x, y) deseada. Cambia (x, y) por las coordenadas reales.
-draw_set_font(Font_Menue);
-draw_set_color(c_white);
-draw_text(10, 10, display_text); // Cambia (10, 10) por las coordenadas donde quieres que aparezca el texto

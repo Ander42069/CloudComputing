@@ -1,5 +1,6 @@
-/// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
+
+
+
 /// @description Inserte aquí la descripción
 draw_set_font(Font_Menue);
 draw_set_halign(fa_center);
