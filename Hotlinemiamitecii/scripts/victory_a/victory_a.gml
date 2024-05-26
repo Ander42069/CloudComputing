@@ -1,1 +1,0 @@
-global.victory = false;
