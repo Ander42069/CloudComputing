@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite56",
-    "path":"sprites/Sprite56/Sprite56.yy",
+    "name":"spr_Tree",
+    "path":"sprites/spr_Tree/spr_Tree.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,3 +1,5 @@
+
+
 /// Evento Draw de objScoreDisplay
 if (variable_instance_exists(objVictory, "finalScore")) {
     scoreText = "Puntaje final: " + objVictory.finalScore;

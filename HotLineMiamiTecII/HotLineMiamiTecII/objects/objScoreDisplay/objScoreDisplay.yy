@@ -9,8 +9,8 @@
   "name":"objScoreDisplay",
   "overriddenProperties":[],
   "parent":{
-    "name":"Gameplay_Control",
-    "path":"folders/objects/Gameplay_Control.yy",
+    "name":"TitleScreen",
+    "path":"folders/objects/TitleScreen.yy",
   },
   "parentObjectId":null,
   "persistent":false,
