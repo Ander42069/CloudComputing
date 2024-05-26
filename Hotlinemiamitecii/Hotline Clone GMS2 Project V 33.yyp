@@ -71,7 +71,7 @@
     {"id":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},},
     {"id":{"name":"obj_Weapon_Pickup","path":"objects/obj_Weapon_Pickup/obj_Weapon_Pickup.yy",},},
     {"id":{"name":"obj_Weapon_Throw","path":"objects/obj_Weapon_Throw/obj_Weapon_Throw.yy",},},
-    {"id":{"name":"objdisplaii","path":"objects/objdisplaii/objdisplaii.yy",},},
+    {"id":{"name":"obj_async_http","path":"objects/obj_async_http/obj_async_http.yy",},},
     {"id":{"name":"objPause","path":"objects/objPause/objPause.yy",},},
     {"id":{"name":"objScoreDisplay","path":"objects/objScoreDisplay/objScoreDisplay.yy",},},
     {"id":{"name":"objVictory","path":"objects/objVictory/objVictory.yy",},},
