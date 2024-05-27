@@ -1,5 +1,5 @@
 var enter_key = vk_enter;
-var _login_url = "http://localhost:4000/auth/google";
+var _login_url = "http://localhost:3000";
 
 
 if (keyboard_check_pressed(enter_key) && selected == 1) {

@@ -4,7 +4,7 @@
 draw_set_font(Font_Menue);
 draw_set_halign(fa_center);
 
-
+global.partidas_jugadas = 0;
 
 grabCamera_Width  = camera_get_view_width(view_camera[0])/2;
 grabCamera_Height = camera_get_view_height(view_camera[0])/2;

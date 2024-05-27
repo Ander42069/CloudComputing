@@ -41,3 +41,4 @@ switch(weapon) {
 
 score += 100;
 global.score = score;  
+

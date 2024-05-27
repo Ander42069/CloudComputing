@@ -1,4 +1,5 @@
 if (victory) { // Cambio aquí: Verificar victoria
+
     if (!surface_exists(victorySurface)) {
         victorySurface = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
         surface_set_target(victorySurface);
@@ -7,7 +8,7 @@ if (victory) { // Cambio aquí: Verificar victoria
 
         instance_deactivate_all(true);
     }
-
+		
     var text_title = "!VICTORY!";
     var text_1 = "REINICIAR";
     var text_2 = "MENU";
@@ -80,6 +81,7 @@ if (victory) { // Cambio aquí: Verificar victoria
 victory = instance_number(obj_enemy_White) == 0 && instance_number(obj_enemy_Red) == 0; // Nueva condición
 
 if (victory) {
+	
     if (!surface_exists(victorySurface)) {
         victorySurface = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
         surface_set_target(victorySurface);

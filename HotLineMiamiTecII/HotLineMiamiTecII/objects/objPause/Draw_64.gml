@@ -69,5 +69,5 @@ if (pause) {
         surface_free(pauseSurface);
     }
     instance_activate_all();
-    draw_text(1200, 64, string(global.points));
+    draw_text(1200, 64, string(score));
 }
