@@ -58,8 +58,7 @@ if (keyEnter) {
             }
             instance_activate_all();
             room_restart(); // Reiniciar la sala actual
-ds_list_add(global.partida_puntajes, score);
-	score = 0;
+
             break;
         case 2:
             room_goto(Menu); // Volver (cambiar sala a Menu)
