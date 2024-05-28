@@ -1,4 +1,6 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
 // Event: Game Start (obj_game_start)
-global.partidas_jugadas = 0; // Inicializa la variable para contar las partidas jugadas
+if (!variable_global_exists("partida_puntajes")) {
+    global.partida_puntajes = ds_list_create();
+}

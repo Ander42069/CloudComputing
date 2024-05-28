@@ -58,13 +58,12 @@ if (keyEnter) {
             }
             instance_activate_all();
             room_restart(); // Reiniciar la sala actual
-			// Al iniciar una nueva partida
-			global.partidas_jugadas += 1;
 
             break;
         case 2:
             room_goto(Menu); // Volver (cambiar sala a Menu)
+			
             break;
-        // Agrega más casos si tienes más opciones
+     
     }
 }

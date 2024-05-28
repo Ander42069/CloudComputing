@@ -59,7 +59,9 @@ spread_Shotgun =8;
 
 
 
-
+if (!variable_global_exists("partida_puntajes")) {
+    global.partida_puntajes = ds_list_create();
+}
 
 
 

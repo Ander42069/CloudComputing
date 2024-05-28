@@ -60,6 +60,8 @@ if (keyEnter) {
             break;
         case 2:
             room_goto(Menu); // Volver (cambiar sala a Menu)
+			ds_list_add(global.partida_puntajes, score);
+	score = 0;
             break;
         // Agrega más casos si tienes más opciones
     }
