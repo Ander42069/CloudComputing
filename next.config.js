@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  reactStrictMode: true,
+  swcMinify: true,
+  output: 'standalone',
+  //output: "export",
   images: {
     domains: ["lh3.googleusercontent.com"],
   },
