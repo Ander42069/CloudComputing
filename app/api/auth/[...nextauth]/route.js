@@ -12,6 +12,7 @@ const authOptions = {
       //redirectUri: "http://hotlinemiamitecii.me/CloudComputing/",
     }),
   ],
+  secret: process.env.NEXTAUTH_SECRET,
   // función pasada como parametro (signIn()) a otra función
   callbacks: {
     async signIn({ user, account }) {
