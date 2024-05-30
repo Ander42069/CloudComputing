@@ -1,6 +1,7 @@
-/// @description Insert description here
-
-//hover
+/// @description Inserte aquí la descripción
+// Puede escribir su código en este editor
+/// @description Inserte aquí la descripción
+// Puede escribir su código en este editor
 if (time < duration) {
     blink = ease_in_and_out(time, start, dest - start, duration);
     time++;
@@ -11,8 +12,6 @@ if (time < duration) {
     time = 0;
 }
 
-// change palm rotation
-//wiggle
 if (time2 < duration2) {
     wiggle = ease_in_and_out(time2, start2, dest2 - start2, duration2);
     time2++;
@@ -23,10 +22,10 @@ if (time2 < duration2) {
     time2 = 0;
 }
 
-// input
+// Manejo de entrada del teclado
 var keyDown = keyboard_check_released(vk_down);
 var keyUp = keyboard_check_released(vk_up);
-var keyEnter = keyboard_check_pressed(vk_enter); // Detect Enter key
+var keyEnter = keyboard_check_pressed(vk_enter); // Detectar tecla Enter
 
 if (keyDown) {
     draw_Extra = 0;
@@ -48,7 +47,7 @@ if (keyUp) {
     }
 }
 
-// Execute action based on selected option
+// Ejecutar acción basada en la opción seleccionada
 if (keyEnter) {
     switch (selected) {
         case 1:
@@ -57,13 +56,13 @@ if (keyEnter) {
                 surface_free(victorySurface);
             }
             instance_activate_all();
-            room_goto(Room_Gameplay); // Reiniciar la sala actual
-
+            room_goto(level3); // Reiniciar la sala actual
             break;
         case 2:
-            room_goto(Menu); // Volver (cambiar sala a Menu)
-			
+            room_goto(Room_Gameplay); // Volver al menú
             break;
-     
+        case 3:
+            room_goto(Menu); // Ir al siguiente nivel (asegúrate de que NextLevel es el nombre correcto de la sala)
+            break;
     }
 }
