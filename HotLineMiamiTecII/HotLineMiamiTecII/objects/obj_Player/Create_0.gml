@@ -36,4 +36,8 @@ ai_Circle_Range = 100;
 
 
 health = 1;
+global.points = 0;
 
+// Evento Create de obj_Player
+is_attacking = false;
+attack_damage = 10; // El daño que el cuchillo hará a los enemigos

@@ -13,3 +13,4 @@ duration = 90;
 time = 0;
 
 hover = 0;
+damage = 1;
